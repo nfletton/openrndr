@@ -1,0 +1,935 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Segment</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>openrndr</span>            </a>    </div>
+    <div>0.1.0-dev.1+960ce1b
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="openrndr-shape::org.openrndr.shape/Segment///PointingToDeclaration//1025991787">
+  <div class="breadcrumbs"><a href="../../index.html">openrndr-shape</a><span class="delimiter">/</span><a href="../index.html">org.openrndr.shape</a><span class="delimiter">/</span><a href="index.html">Segment</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Segment</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Segment</a> : <a href="../-shape-contour-provider/index.html">ShapeContourProvider</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Creates a new <a href="index.html">Segment</a>, which specifies a linear or a Bézier curve path between two anchor points (and up to two control points for curvature).</p></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-1926111435%2FConstructors%2F1025991787" anchor-label="Segment" id="-1926111435%2FConstructors%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-segment.html"><span><span>Segment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1926111435%2FConstructors%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="-segment.html"><span class="token function">Segment</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;start<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;end<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;corner<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Linear segment constructor.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="786884299%2FConstructors%2F1025991787" anchor-label="Segment" id="786884299%2FConstructors%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-segment.html"><span><span>Segment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="786884299%2FConstructors%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="-segment.html"><span class="token function">Segment</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;start<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;c0<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;end<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;corner<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Quadratic Bézier segment constructor.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="894500577%2FConstructors%2F1025991787" anchor-label="Segment" id="894500577%2FConstructors%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-segment.html"><span><span>Segment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="894500577%2FConstructors%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="-segment.html"><span class="token function">Segment</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;start<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;c0<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;c1<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;end<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;corner<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Cubic Bézier segment constructor.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="336455141%2FConstructors%2F1025991787" anchor-label="Segment" id="336455141%2FConstructors%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-segment.html"><span><span>Segment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="336455141%2FConstructors%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="-segment.html"><span class="token function">Segment</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;start<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;control<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;end<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;corner<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1567856065%2FFunctions%2F1025991787" anchor-label="adaptivePositions" id="1567856065%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="adaptive-positions.html"><span>adaptive</span><wbr><span><span>Positions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1567856065%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="adaptive-positions.html"><span class="token function">adaptivePositions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">distanceTolerance<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.5</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Recursively subdivides <a href="index.html">Segment</a> to approximate Bézier curve.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1989895813%2FFunctions%2F1025991787" anchor-label="adaptivePositionsWithT" id="-1989895813%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="adaptive-positions-with-t.html"><span>adaptive</span><wbr><span>Positions</span><wbr><span>With</span><wbr><span><span>T</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1989895813%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="adaptive-positions-with-t.html"><span class="token function">adaptivePositionsWithT</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">distanceTolerance<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.5</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="109562837%2FFunctions%2F1025991787" anchor-label="copy" id="109562837%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="copy.html"><span><span>copy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="109562837%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="copy.html"><span class="token function">copy</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;start<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token operator"> = </span>this.start<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;control<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token operator">&gt;</span><span class="token operator"> = </span>this.control<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;end<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token operator"> = </span>this.end</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns a shallow copy of the <a href="index.html">Segment</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1936508456%2FFunctions%2F1025991787" anchor-label="derivative" id="1936508456%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="derivative.html"><span><span>derivative</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1936508456%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="derivative.html"><span class="token function">derivative</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">t<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1532224328%2FFunctions%2F1025991787" anchor-label="direction" id="-1532224328%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="direction.html"><span><span>direction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1532224328%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="direction.html"><span class="token function">direction</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns the direction <a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a> of between the <a href="index.html">Segment</a> anchor points.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="direction.html"><span class="token function">direction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">t<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-900039554%2FFunctions%2F1025991787" anchor-label="div" id="-900039554%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="div.html"><span><span>div</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-900039554%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="div.html"><span class="token function">div</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scale<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-360475362%2FFunctions%2F1025991787" anchor-label="equals" id="-360475362%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="equals.html"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-360475362%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="560364029%2FFunctions%2F1025991787" anchor-label="equidistantPositions" id="560364029%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="equidistant-positions.html"><span>equidistant</span><wbr><span><span>Positions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="560364029%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="equidistant-positions.html"><span class="token function">equidistantPositions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pointCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">distanceTolerance<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.5</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Samples specified amount of points on the <a href="index.html">Segment</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1145377867%2FFunctions%2F1025991787" anchor-label="equidistantPositionsWithT" id="-1145377867%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="equidistant-positions-with-t.html"><span>equidistant</span><wbr><span>Positions</span><wbr><span>With</span><wbr><span><span>T</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1145377867%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="equidistant-positions-with-t.html"><span class="token function">equidistantPositionsWithT</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pointCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">distanceTolerance<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.5</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1575251279%2FFunctions%2F1025991787" anchor-label="extrema" id="1575251279%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="extrema.html"><span><span>extrema</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1575251279%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="extrema.html"><span class="token function">extrema</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns the <a href="https://pomax.github.io/bezierinfo/#explanation">t</a> values of the extrema for the current <a href="index.html">Segment</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="558254124%2FFunctions%2F1025991787" anchor-label="extremaPoints" id="558254124%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="extrema-points.html"><span>extrema</span><wbr><span><span>Points</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="558254124%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="extrema-points.html"><span class="token function">extremaPoints</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns the extrema points as <a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a>s for current <a href="index.html">Segment</a></p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-727401976%2FFunctions%2F1025991787" anchor-label="hashCode" id="-727401976%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="hash-code.html"><span>hash</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-727401976%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1113700059%2FFunctions%2F1025991787" anchor-label="isStraight" id="-1113700059%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="is-straight.html"><span>is</span><wbr><span><span>Straight</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1113700059%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-straight.html"><span class="token function">isStraight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">epsilon<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.01</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Determines if the <a href="index.html">Segment</a> forms a straight line.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1830849814%2FFunctions%2F1025991787" anchor-label="lut" id="-1830849814%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="lut.html"><span><span>lut</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1830849814%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="lut.html"><span class="token function">lut</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">size<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">100</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1690861551%2FFunctions%2F1025991787" anchor-label="minus" id="-1690861551%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="minus.html"><span><span>minus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1690861551%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="minus.html"><span class="token function">minus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">right<span class="token operator">: </span><a href="index.html">Segment</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1533724336%2FFunctions%2F1025991787" anchor-label="nearest" id="-1533724336%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="nearest.html"><span><span>nearest</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1533724336%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="nearest.html"><span class="token function">nearest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">point<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-segment-point/index.html">SegmentPoint</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Find point on segment nearest to given <a href="nearest.html">point</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-278301128%2FFunctions%2F1025991787" anchor-label="normal" id="-278301128%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="normal.html"><span><span>normal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-278301128%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="normal.html"><span class="token function">normal</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ut<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">polarity<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-y-polarity/index.html">YPolarity</a><span class="token operator"> = </span>YPolarity.CW_NEGATIVE_Y</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns a normal <a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a> at given value of <a href="https://pomax.github.io/bezierinfo/#explanation">t</a> in the range of <code class="lang-kotlin">0.0</code> to <code class="lang-kotlin">1.0</code>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1132369015%2FFunctions%2F1025991787" anchor-label="offset" id="-1132369015%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="offset.html"><span><span>offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1132369015%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="offset.html"><span class="token function">offset</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;distance<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;stepSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.01</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;yPolarity<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-y-polarity/index.html">YPolarity</a><span class="token operator"> = </span>YPolarity.CW_NEGATIVE_Y</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">Segment</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1736646954%2FFunctions%2F1025991787" anchor-label="on" id="1736646954%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="on.html"><span><span>on</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1736646954%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on.html"><span class="token function">on</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">point<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">5.0</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-290191117%2FFunctions%2F1025991787" anchor-label="plus" id="-290191117%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="plus.html"><span><span>plus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-290191117%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="plus.html"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">right<span class="token operator">: </span><a href="index.html">Segment</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="855732155%2FFunctions%2F1025991787" anchor-label="pointAtLength" id="855732155%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="point-at-length.html"><span>point</span><wbr><span>At</span><wbr><span><span>Length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="855732155%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="point-at-length.html"><span class="token function">pointAtLength</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">length<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">distanceTolerance<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.5</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Calculates the point at a given distance along this <a href="index.html">Segment</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1513440738%2FFunctions%2F1025991787" anchor-label="pose" id="1513440738%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="pose.html"><span><span>pose</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1513440738%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="pose.html"><span class="token function">pose</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">t<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">polarity<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-y-polarity/index.html">YPolarity</a><span class="token operator"> = </span>YPolarity.CW_NEGATIVE_Y</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-matrix44/index.html">Matrix44</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Calculates the pose <a href="../../../openrndr-math/org.openrndr.math/-matrix44/index.html">Matrix44</a> (i.e. translation and rotation) that describes an orthonormal basis formed by normal and tangent of the contour at <a href="https://pomax.github.io/bezierinfo/#explanation">t</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="855065290%2FFunctions%2F1025991787" anchor-label="position" id="855065290%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="position.html"><span><span>position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="855065290%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="position.html"><span class="token function">position</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ut<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Returns a point on the segment.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="979792619%2FFunctions%2F1025991787" anchor-label="reduced" id="979792619%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="reduced.html"><span><span>reduced</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="979792619%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="reduced.html"><span class="token function">reduced</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stepSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.01</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">Segment</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2146646236%2FFunctions%2F1025991787" anchor-label="scale" id="-2146646236%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="scale.html"><span><span>scale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2146646236%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="scale.html"><span class="token function">scale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scale<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">polarity<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-y-polarity/index.html">YPolarity</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="scale.html"><span class="token function">scale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">polarity<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-y-polarity/index.html">YPolarity</a><span class="token punctuation">, </span></span><span class="parameter ">scale<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2116027705%2FFunctions%2F1025991787" anchor-label="split" id="-2116027705%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="split.html"><span><span>split</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2116027705%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="split.html"><span class="token function">split</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">t<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">Segment</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Splits the path into one or two parts, depending on if the cut was successful.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-760945326%2FFunctions%2F1025991787" anchor-label="sub" id="-760945326%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="sub.html"><span><span>sub</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-760945326%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="sub.html"><span class="token function">sub</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">t0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">t1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Samples a new <a href="index.html">Segment</a> from the current <a href="index.html">Segment</a> starting at <a href="sub.html">t0</a> and ending at <a href="sub.html">t1</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="451956892%2FFunctions%2F1025991787" anchor-label="tForLength" id="451956892%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="t-for-length.html"><span>t</span><wbr><span>For</span><wbr><span><span>Length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="451956892%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="t-for-length.html"><span class="token function">tForLength</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">length<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Estimate <a href="https://pomax.github.io/bezierinfo/#explanation">t</a> value for a given length</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1702599181%2FFunctions%2F1025991787" anchor-label="times" id="-1702599181%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="times.html"><span><span>times</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1702599181%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="times.html"><span class="token function">times</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scale<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-905568041%2FFunctions%2F1025991787" anchor-label="toString" id="-905568041%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-905568041%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-129138444%2FFunctions%2F1025991787" anchor-label="transform" id="-129138444%2FFunctions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="transform.html"><span><span>transform</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-129138444%2FFunctions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="transform.html"><span class="token function">transform</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">transform<span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-matrix44/index.html">Matrix44</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Applies given linear transformation.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-337937874%2FProperties%2F1025991787" anchor-label="bounds" id="-337937874%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="bounds.html"><span><span>bounds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-337937874%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="-337937874%2FProperties%2F1025991787" anchor-label="bounds" id="-337937874%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="bounds.html">bounds</a><span class="token operator">: </span><a href="../-rectangle/index.html">Rectangle</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-337937874%2FProperties%2F1025991787" anchor-label="bounds" id="-337937874%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Returns the bounding box.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-322798331%2FProperties%2F1025991787" anchor-label="clockwise" id="-322798331%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="clockwise.html"><span><span>clockwise</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-322798331%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="-322798331%2FProperties%2F1025991787" anchor-label="clockwise" id="-322798331%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="clockwise.html">clockwise</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="839514973%2FProperties%2F1025991787" anchor-label="contour" id="839514973%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="contour.html"><span><span>contour</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="839514973%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="839514973%2FProperties%2F1025991787" anchor-label="contour" id="839514973%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="contour.html">contour</a><span class="token operator">: </span><a href="../-shape-contour/index.html">ShapeContour</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="839514973%2FProperties%2F1025991787" anchor-label="contour" id="839514973%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><p class="paragraph">the provided contour</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1585530310%2FProperties%2F1025991787" anchor-label="control" id="-1585530310%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="control.html"><span><span>control</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1585530310%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="-1585530310%2FProperties%2F1025991787" anchor-label="control" id="-1585530310%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="control.html">control</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1585530310%2FProperties%2F1025991787" anchor-label="control" id="-1585530310%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Array of control points which control the curvature of the <a href="index.html">Segment</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1135848818%2FProperties%2F1025991787" anchor-label="corner" id="-1135848818%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="corner.html"><span><span>corner</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1135848818%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="-1135848818%2FProperties%2F1025991787" anchor-label="corner" id="-1135848818%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="corner.html">corner</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1432488083%2FProperties%2F1025991787" anchor-label="cubic" id="-1432488083%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="cubic.html"><span><span>cubic</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1432488083%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="-1432488083%2FProperties%2F1025991787" anchor-label="cubic" id="-1432488083%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="cubic.html">cubic</a><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1432488083%2FProperties%2F1025991787" anchor-label="cubic" id="-1432488083%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Converts the <a href="index.html">Segment</a> to a cubic Bézier curve.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-567112324%2FProperties%2F1025991787" anchor-label="end" id="-567112324%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="end.html"><span><span>end</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-567112324%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="-567112324%2FProperties%2F1025991787" anchor-label="end" id="-567112324%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="end.html">end</a><span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-567112324%2FProperties%2F1025991787" anchor-label="end" id="-567112324%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The end point of the <a href="index.html">Segment</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2146918627%2FProperties%2F1025991787" anchor-label="length" id="-2146918627%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="length.html"><span><span>length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2146918627%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="-2146918627%2FProperties%2F1025991787" anchor-label="length" id="-2146918627%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="length.html">length</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-2146918627%2FProperties%2F1025991787" anchor-label="length" id="-2146918627%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Calculates approximate Euclidean length of the <a href="index.html">Segment</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1922187198%2FProperties%2F1025991787" anchor-label="linear" id="1922187198%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="linear.html"><span><span>linear</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1922187198%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="1922187198%2FProperties%2F1025991787" anchor-label="linear" id="1922187198%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="linear.html">linear</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1922187198%2FProperties%2F1025991787" anchor-label="linear" id="1922187198%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Indicates whether or not the <a href="index.html">Segment</a> is <a href="../-segment-type/-l-i-n-e-a-r/index.html">linear</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-481087905%2FProperties%2F1025991787" anchor-label="quadratic" id="-481087905%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="quadratic.html"><span><span>quadratic</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-481087905%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="-481087905%2FProperties%2F1025991787" anchor-label="quadratic" id="-481087905%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="quadratic.html">quadratic</a><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-481087905%2FProperties%2F1025991787" anchor-label="quadratic" id="-481087905%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Converts the <a href="index.html">Segment</a> to a quadratic Bézier curve.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1027906645%2FProperties%2F1025991787" anchor-label="reverse" id="1027906645%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="reverse.html"><span><span>reverse</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1027906645%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="1027906645%2FProperties%2F1025991787" anchor-label="reverse" id="1027906645%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="reverse.html">reverse</a><span class="token operator">: </span><a href="index.html">Segment</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1027906645%2FProperties%2F1025991787" anchor-label="reverse" id="1027906645%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Reverses the order of control points of the given path <a href="index.html">Segment</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1827822127%2FProperties%2F1025991787" anchor-label="simple" id="-1827822127%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="simple.html"><span><span>simple</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1827822127%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="-1827822127%2FProperties%2F1025991787" anchor-label="simple" id="-1827822127%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="simple.html">simple</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1097866923%2FProperties%2F1025991787" anchor-label="start" id="-1097866923%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="start.html"><span><span>start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1097866923%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="-1097866923%2FProperties%2F1025991787" anchor-label="start" id="-1097866923%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="start.html">start</a><span class="token operator">: </span><a href="../../../openrndr-math/org.openrndr.math/-vector2/index.html">Vector2</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1097866923%2FProperties%2F1025991787" anchor-label="start" id="-1097866923%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><p class="paragraph">The start point of the <a href="index.html">Segment</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1609680183%2FProperties%2F1025991787" anchor-label="type" id="-1609680183%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="type.html"><span><span>type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1609680183%2FProperties%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><a data-name="-1609680183%2FProperties%2F1025991787" anchor-label="type" id="-1609680183%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="type.html">type</a><span class="token operator">: </span><a href="../-segment-type/index.html">SegmentType</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1609680183%2FProperties%2F1025991787" anchor-label="type" id="-1609680183%2FProperties%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Returns the type of the segment.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="tabbedcontent">Extensions</h2>
+      <div class="table" data-togglable="Extensions"><a data-name="1437514896%2FExtensions%2F1025991787" anchor-label="intersections" id="1437514896%2FExtensions%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../intersections.html"><span><span>intersections</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1437514896%2FExtensions%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark common-like" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":openrndr-shape:dokkaHtmlPartial/commonMain">common</button></div>
+<div class="content sourceset-depenent-content" data-active="" data-togglable=":openrndr-shape:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">Segment</a><span class="token punctuation">.</span><a href="../intersections.html"><span class="token function">intersections</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">Segment</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-segment-intersection/index.html">SegmentIntersection</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Calculates a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a> of all points where two <a href="index.html">Segment</a>s intersect.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">Segment</a><span class="token punctuation">.</span><a href="../intersections.html"><span class="token function">intersections</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-shape-contour/index.html">ShapeContour</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-contour-intersection/index.html">ContourIntersection</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Calculates a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a> of all points of where a <a href="index.html">Segment</a> and a <a href="../-shape-contour/index.html">ShapeContour</a> intersect.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">Segment</a><span class="token punctuation">.</span><a href="../intersections.html"><span class="token function">intersections</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-shape/index.html">Shape</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-contour-intersection/index.html">ContourIntersection</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Calculates a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a> of all points of where a <a href="index.html">Segment</a> and a <a href="../-shape/index.html">Shape</a> intersect.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Sources</h2>
+      <div class="table" data-togglable="Sources"><a data-name="-193087940%2FSource%2F1025991787" anchor-label="https://github.com/openrndr/openrndr/blob/master/openrndr-shape/src/commonMain/kotlin/org/openrndr/shape/Segment.kt#L10" id="-193087940%2FSource%2F1025991787" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":openrndr-shape:dokkaHtmlPartial/commonMain" data-filterable-set=":openrndr-shape:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="https://github.com/openrndr/openrndr/blob/master/openrndr-shape/src/commonMain/kotlin/org/openrndr/shape/Segment.kt#L10">common source</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-193087940%2FSource%2F1025991787"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
