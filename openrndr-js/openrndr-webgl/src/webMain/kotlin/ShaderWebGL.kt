@@ -141,7 +141,7 @@ class ShaderWebGL(
     override fun uniform(name: String, value: ColorRGBa) {
         val index = uniformIndex(name)
         if (index != null) {
-            context.uniform4fv(index, value.toFloat32Array(), null, null)
+            context.uniform4fv(index, value.toLinear().toFloat32Array(), null, null)
             context.checkErrors("$name $value")
         }
     }
