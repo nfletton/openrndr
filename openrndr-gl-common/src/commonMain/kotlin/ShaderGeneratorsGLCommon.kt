@@ -22,8 +22,21 @@ private val rotate2 = """mat2 rotate2(float rotationInDegrees) {
 }
 """.trimIndent()
 
+private val sRgbConversionFunctions = """vec4 linearToSRGB(vec4 c) {
+    bvec3 cutoff = lessThan(c.rgb, vec3(0.0031308));
+    vec3 higher = vec3(1.055) * pow(c.rgb, vec3(1.0 / 2.4)) - vec3(0.055);
+    vec3 lower  = c.rgb * vec3(12.92);
+    return vec4(mix(higher, lower, cutoff), c.a);
+}
+""".trimIndent()
 
-class ShaderGeneratorsGLCommon : ShaderGenerators {
+
+/**
+ * Generates GLSL shader source for theeOpenGL-based rendering backends.
+ *
+ * @property sRgbConversion Enables linear-to-sRGB conversion in fragment shader output.
+ */
+class ShaderGeneratorsGLCommon(val sRgbConversion: Boolean = false) : ShaderGenerators {
     override fun vertexBufferFragmentShader(shadeStructure: ShadeStructure): String = """|
 |${primitiveTypes("d_vertex_buffer")}
 |${shadeStructure.structDefinitions ?: ""}
@@ -353,7 +366,7 @@ ${
             boundsPosition = "vec3(va_texCoord0, 0.0)", boundsSize = "v_boundsSize"
         )
     }
-
+${if (sRgbConversion) sRgbConversionFunctions else ""}
 
 void main(void) {
     float smoothFactor = 3.0;
@@ -379,7 +392,7 @@ ${shadeStructure.fragmentTransform?.prependIndent("        ") ?: ""}
 
     final.rgb += x_fill.rgb * ir * x_fill.a;
     final.a += ir * x_fill.a;
-    ${if (!shadeStructure.suppressDefaultOutput) "o_color = final;" else ""}
+    ${if (!shadeStructure.suppressDefaultOutput) "o_color = ${if (sRgbConversion) "linearToSRGB(final)" else "final"};" else ""}
 }
 """
 

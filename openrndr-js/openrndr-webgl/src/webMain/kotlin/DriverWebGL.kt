@@ -704,7 +704,7 @@ class DriverWebGL(val context: GL) : Driver {
     override val fontVectorMapManager: FontMapManager
         get() = TODO("Not yet implemented")
     override val shaderGenerators: ShaderGenerators by lazy {
-        ShaderGeneratorsGLCommon()
+        ShaderGeneratorsGLCommon(true)
     }
     private val vaos = mutableMapOf<ShaderVertexDescription, WebGLVertexArrayObject>()
 
