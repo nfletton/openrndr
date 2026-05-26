@@ -22,6 +22,13 @@ private val rotate2 = """mat2 rotate2(float rotationInDegrees) {
 }
 """.trimIndent()
 
+private val sRgbConversionFunctions = """vec3 linearToSRGB(vec3 c) {
+    bvec3 cutoff = lessThan(c.rgb, vec3(0.0031308));
+    vec3 higher = vec3(1.055) * pow(c.rgb, vec3(1.0 / 2.4)) - vec3(0.055);
+    vec3 lower  = c.rgb * vec3(12.92);
+    return vec3(mix(higher, lower, cutoff));
+}
+""".trimIndent()
 
 class ShaderGeneratorsGLCommon : ShaderGenerators {
     override fun vertexBufferFragmentShader(shadeStructure: ShadeStructure): String = """|
@@ -344,6 +351,10 @@ ${transformVaryingIn}
 ${if (!shadeStructure.suppressDefaultOutput) "out vec4 o_color;" else ""}
 #endif
 
+#ifdef OR_WEBGL2
+uniform bool u_convertToSrgb;
+#endif
+
 ${shadeStructure.fragmentPreamble ?: ""}
 
 flat in int v_instance;
@@ -354,9 +365,12 @@ ${
         )
     }
 
+#ifdef OR_WEBGL2
+${sRgbConversionFunctions}
+#endif
 
 void main(void) {
-    float smoothFactor = 3.0;
+    float smoothFactor = 3.0;   
 
     vec4 x_fill = vi_fill;
     vec4 x_stroke = vi_stroke;
@@ -372,14 +386,24 @@ ${shadeStructure.fragmentTransform?.prependIndent("        ") ?: ""}
     float b = x_strokeWeight / vi_radius.x;
     float ir = smoothstep(0.0, wd * smoothFactor, 1.0 - b - d);
 
+    vec3 stroke_rgb = x_stroke.rgb;
+    vec3 fill_rgb = x_fill.rgb;
+
+#ifdef OR_WEBGL2
+    if (u_convertToSrgb) {
+        stroke_rgb = linearToSRGB(x_stroke.rgb);
+        fill_rgb = linearToSRGB(x_fill.rgb);
+    } 
+#endif
+
     vec4 final = vec4(0.0);
-    final.rgb =  x_stroke.rgb;
+    final.rgb =  stroke_rgb;
     final.a = or * (1.0 - ir) * x_stroke.a;
     final.rgb *= final.a;
 
-    final.rgb += x_fill.rgb * ir * x_fill.a;
+    final.rgb += fill_rgb * ir * x_fill.a;
     final.a += ir * x_fill.a;
-    ${if (!shadeStructure.suppressDefaultOutput) "o_color = final;" else ""}
+    ${if (!shadeStructure.suppressDefaultOutput) "    o_color = final;" else ""}
 }
 """
 

@@ -475,6 +475,11 @@ data class DrawStyle(
             if (shader.hasUniform("u_colorMatrix")) {
                 shader.uniform("u_colorMatrix", colorMatrix.floatArray)
             }
+
+            val rt = RenderTarget.active
+            if (rt.requiresColorSpaceConversion() && shader.hasUniform("u_convertToSrgb")) {
+                shader.uniform("u_convertToSrgb", true)
+            }
         } else {
             val styleBlock = styleBlocks.getOrPut(Driver.instance.contextID) {
                 val styleBlock = shader.createBlock("StyleBlock")

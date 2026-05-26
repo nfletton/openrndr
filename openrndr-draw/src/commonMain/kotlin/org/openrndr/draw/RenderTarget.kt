@@ -238,6 +238,7 @@ interface RenderTarget: AutoCloseable {
 
     fun defaultBlendMode(): BlendMode = if (blendModes.isEmpty()) BlendMode.OVER else BlendMode.REPLACE
 
+    fun requiresColorSpaceConversion(): Boolean = false
 
     val depthBuffer: DepthBuffer?
 

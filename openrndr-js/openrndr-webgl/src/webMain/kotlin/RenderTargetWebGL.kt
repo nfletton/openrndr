@@ -46,6 +46,8 @@ open class RenderTargetWebGL(
         blendModes[index] = blendMode
     }
 
+    override fun requiresColorSpaceConversion(): Boolean = framebuffer == null
+
     companion object {
         fun create(
             context: GL,
